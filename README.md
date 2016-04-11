@@ -1,6 +1,6 @@
-# ev3dev_ros_demo
+### ev3dev_ros_demo
 
-A quick demo of ev3dev + ros
+This is a very quick demo of ros & ev3dev.
 
 Requires [Ubuntu 14.04](http://www.ubuntu.com/) + [ev3dev](http://www.ev3dev.org/) + [Ros](http://www.ros.org) & [ev3dev-lang-cpp](https://github.com/ddemidov/ev3dev-lang-cpp):
 
@@ -8,7 +8,9 @@ See my instructions to install all requirments here: https://github.com/moriarty
 
 In the above instructions, I recommend python because the steps are much easier. This demo is for roscpp + ev3dev-lang-cpp.
 
-## Install Instructions
+# Install Instructions
+
+## Requirements:
 
 Most of the steps are detailed in this document: [brickstrap build steps](https://github.com/moriarty/ros-ev3/blob/master/brickstrap-build-status.md), so I will just mention the high level steps.
 
@@ -27,7 +29,7 @@ Most of the steps are detailed in this document: [brickstrap build steps](https:
 - The EV3 doesn't have enough CPU/RAM to run ```roscore```, so you'll need a computer on your network with ROS installed and roscore running. This can be the virtual machine from above.
 - A RaspberryPi/BrickPi with ev3dev can run roscore, see [notes](https://github.com/moriarty/ros-ev3/blob/master/README.md)
 
-### Use your Brickstrap environment for development
+## Install this demo in a catkin_ws in your brickstrap environment:
 
 ```catkin_make``` will run out of memory on the EV3. The quick fix, is develop inside of brickstrap and dump the whole catkin workspace over with FileZilla. Not an elegant solution but it works.
 This instructions are standard to [create a catkin workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace)
